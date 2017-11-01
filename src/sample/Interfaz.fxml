@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ee82ee;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SimpleList">
+  <children>
+    <Label layoutX="13.0" layoutY="23.0" prefHeight="58.0" prefWidth="168.0" text="  Menú:">
+      <font>
+        <Font name="System Italic" size="40.0" />
+      </font>
+    </Label>
+    <Button id="Insertarbtn" fx:id="insertarbtn" defaultButton="true" layoutX="139.0" layoutY="99.0" mnemonicParsing="false" prefWidth="85.0" text="Insertar">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="terminarbtn" cancelButton="true" font="$x1" layoutX="75.0" layoutY="343.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="Cerrar" />
+    <Button fx:id="buscarbtn" font="$x1" layoutX="139.0" layoutY="138.0" mnemonicParsing="false" prefWidth="85.0" text="Buscar" />
+    <Button fx:id="eliminarbtn" font="$x1" layoutX="139.0" layoutY="185.0" mnemonicParsing="false" prefWidth="85.0" text="Eliminar" />
+    <FlowPane fx:id="RepresentacionGraficaFlpn" layoutX="259.0" layoutY="73.0" prefHeight="285.0" prefWidth="312.0" style="-fx-background-color: #eee;" />
+    <Label layoutX="259.0" layoutY="34.0" prefHeight="36.0" prefWidth="312.0" text="Representación Gráfica..." textAlignment="LEFT" wrapText="false">
+      <font>
+        <Font name="System Italic" size="25.0" />
+      </font>
+    </Label>
+    <TextField fx:id="InsertarTxt" layoutX="25.0" layoutY="102.0" prefWidth="100.0" />
+    <TextField fx:id="BuscarTxt" layoutX="25.0" layoutY="143.0" prefWidth="100.0" />
+    <TextField fx:id="EliminarTxt" layoutX="25.0" layoutY="187.0" prefWidth="100.0" />
+    <Label fx:id="ContarLbl" layoutX="61.0" layoutY="245.0" prefHeight="84.0" prefWidth="120.0" text="">
+      <font>
+        <Font size="40.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
